@@ -1,4 +1,4 @@
-package com.jain.schl.sclcnfsvc.proxy;
+package com.jain.schl.sclcnfsvc.clients;
 
 import java.util.List;
 

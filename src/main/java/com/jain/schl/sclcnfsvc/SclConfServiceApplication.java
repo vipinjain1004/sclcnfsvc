@@ -7,7 +7,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 @SpringBootApplication
-@PropertySource(ignoreResourceNotFound= false,  value="file:/D:/SchoolManagement/application.properties")
+//@PropertySource(ignoreResourceNotFound= false,  value="file:/D:/SchoolManagement/application.properties")
 @EnableJpaAuditing
 @EnableDiscoveryClient
 public class SclConfServiceApplication {

@@ -19,13 +19,13 @@ public class SclConfController {
 	private SclConfService sclConfService;
 	
 	@GetMapping(value="/searchById/{id}")
-	public SclConfModel getStudentById(@PathVariable(value = "id", required= true) Long id) throws SclConfNotFoundException{
+	public SclConfModel getConfById(@PathVariable(value = "id", required= true) Long id) throws SclConfNotFoundException{
 		LOGGER.info("Find By Id : {}", id);		
 		return sclConfService.findById(id);
 	}
 	
 	@GetMapping(value="/searchByKey/{key}")
-	public SclConfModel getStudentByName(@PathVariable("key") String key) throws SclConfNotFoundException{
+	public SclConfModel getConfByKey(@PathVariable("key") String key) throws SclConfNotFoundException{
 		return sclConfService.findByAttKey(key);
 	}
 }
