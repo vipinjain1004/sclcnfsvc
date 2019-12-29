@@ -23,13 +23,15 @@ public class SclGetConfFromProperty {
 	Configuration conf;
 	
 	 @GetMapping("/confservice")
-	 public BeanConfiguration<Configuration> getConfiguracionRefrescada()
+	 public String getConfiguracionRefrescada()
 	    { 
 		 LOGGER.info("Profile :: ====> {}", conf.getProfile());
 		 
 		 LOGGER.info("Profile :: ====> {}", profile);
+		 StringBuilder sb = new StringBuilder(" Configuration Profile :: ====> "+ conf.getProfile());
+		 sb.append(" Controller Profile :: ====> "+ profile);
 		 
-		 return null;
+		 return sb.toString();
 		 
 	    }
 	

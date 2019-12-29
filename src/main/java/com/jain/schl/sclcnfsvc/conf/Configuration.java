@@ -1,9 +1,11 @@
 package com.jain.schl.sclcnfsvc.conf;
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
 
 @Component
 @ConfigurationProperties("confservice")
+@RefreshScope
 public class Configuration {
     private String profile;
     private String version;
